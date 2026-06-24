@@ -6,7 +6,7 @@ const TopBar = () => {
   return (
     <div className="bg-[#fd802e] text-white">
         <div className="container mx-auto">
-                <div>
+                <div className="flex items-center space-x-4">
                         <Link className="hover:text-gray-300" href="/">
                                 <Image src="@/public/icons/facebook.svg" alt="facebook-icon" className="w-5 h-5" />
                         </Link>
