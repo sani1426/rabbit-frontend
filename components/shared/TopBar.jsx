@@ -17,6 +17,7 @@ const TopBar = () => {
                                 <Image src="@/public/icons/twitter.svg" alt="facebook-icon" className="w-5 h-5" />
                         </Link>
                 </div>
+                <div className=""></div>
         </div>
     </div>
   )

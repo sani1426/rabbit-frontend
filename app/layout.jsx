@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 
 
 const myFont = localFont({
-  src: '@/public/font/tanha.ttf',
+  src: '../public/font/tanha.ttf',
 })
 export const metadata = {
   title: "Create Next App",
