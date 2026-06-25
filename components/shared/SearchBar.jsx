@@ -6,6 +6,12 @@ import { HiMagnifyingGlass, HiMiniXMark } from 'react-icons/hi2'
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [isOpen, setIsOpen] = useState(false)
+  
+  const handleSubmit = (e)=> {
+        e.preventDefault()
+        console.log(searchTerm);
+        setIsOpen(false)
+  }
   return (
     <div
       className={`items-center justify-center w-full transition-all duration-300 ${
@@ -13,7 +19,9 @@ const SearchBar = () => {
       }`}
     >
       {isOpen ? (
-        <form className='relative flex items-center justify-center w-full'>
+        <form
+        onSubmit={handleSubmit}
+         className='relative flex items-center justify-center w-full'>
           <div className='relative w-1/2'>
             <input
               type='text'
