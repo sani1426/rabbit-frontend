@@ -1,7 +1,7 @@
 import {
-  HiOutLineUser,
   HiOutlineShoppingBag,
   HiBars3BottomRight,
+  HiOutlineUser
 } from 'react-icons/hi2'
 import Link from 'next/link'
 import React from 'react'
@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
         <div className='flex items-center space-x-4'>
           <Link href='/profile' className='hover:text-black '>
-            <HiOutLineUser className='h-6 w-6 text-gray-700' />
+            <HiOutlineUser className='h-6 w-6 text-gray-700' />
           </Link>
           <button className='relative hover:text-black'>
             <HiOutlineShoppingBag className='w-6 h-6 text-gray-700' />
